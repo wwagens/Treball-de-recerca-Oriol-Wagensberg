@@ -1,0 +1,15 @@
+class Emplpyee:
+    
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+        self.mail = self.first + "_" + self.last + "@company.com"
+
+emp_1 = Emplpyee("oriol", "wagensberg")
+
+print(emp_1.mail)
+
+emp_1.first = "daniel"
+
+
+print(emp_1.mail)

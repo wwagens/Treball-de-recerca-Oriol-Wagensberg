@@ -1,0 +1,37 @@
+from tkinter import N
+import numpy
+import random
+
+jugades = []
+n_count = 0
+
+print("Starting!!!")
+
+class num: 
+
+    def __init__(self):
+        self.number = str(numpy.random.choice(numpy.arange(0,7), p = [0.246, 0.228, 0.174, 0.14, 0.106, 0.07, 0.036] ))  
+    
+    def value(self):
+        
+        return self.number
+
+while n_count < 40000:
+    
+    simb_1 = num()
+    simb_2 = num()
+    simb_3 = num()
+    
+    jugades = [simb_1.value(), simb_2.value(), simb_3.value()]
+    
+    print(jugades)
+    
+    with open("Plays_list.txt", "a") as f:
+        
+        f.write(str(jugades) + "\n")
+    
+    n_count += 1
+
+
+f.close
+print("Finish")

@@ -1,0 +1,27 @@
+file = open("Plays_list.txt", "r")
+
+lines = file.readlines()
+
+#el bucle principal del lector de partidas
+for line in lines:
+	inputs = (input("Whana play?: [Y/N]"))
+	
+	if inputs == "Y":
+                line.split()
+                for elements in range(3):
+                        x = line[elements]
+                        for simbols in range(7):
+                                if x == str(simbols):
+                                        print(x)
+                        
+	else: 
+		while inputs == "N":
+		
+			inputs = (input("Whana play?: [Y/N]"))
+			
+			if inputs == "Y":
+                                feor elements in range(3):
+                                        x = line[elements]
+                                        for simbols in range(7):
+                                                if x == str(simbols):
+                                                        print(x)
